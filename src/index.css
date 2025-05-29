@@ -100,20 +100,91 @@ header {
 }
 
 .back-button {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  position: fixed;       /* Fix it on screen */
+  top: 100px;             /* Adjust depending on navbar height (navbar padding 1rem + border) */
+  left: 20px;
+  z-index: 1100;         /* Above navbar */
   background: #f1f1f1;
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: all 0.2s ease;
 }
 
 .back-button:hover {
   background: #333;
   color: white;
+}
+.project-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 5rem; /* Space for fixed navbar */
+  font-family: sans-serif;
+}
+
+.project-header {
+  text-align: center;
+}
+
+.project-cover {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.project-section {
+  margin-top: 2rem;
+}
+
+.project-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto 0.5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.image-row {
+  display: flex;
+  gap: 1rem; /* Space between images */
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  margin-top: 1rem;
+}
+
+.project-image.mobile-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.image-descrip {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.project-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
 }
 
 /* Navbar styling */
@@ -173,6 +244,11 @@ header {
   background-color: #fff;
   max-width: 800px;
   margin: 1rem auto;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .card-pic {
