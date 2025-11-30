@@ -1,9 +1,7 @@
 import ProjectCard from './ProjectCard'
-import Navbar from './Navbar'
 import projects from '../data/projects'
 import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-
 
 function Home() {
   const navigate = useNavigate()
@@ -11,6 +9,13 @@ function Home() {
 
   const handleCardClick = (slug) => {
     navigate(`/projects/${slug}`)
+  }
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects')
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 
   useEffect(() => {
@@ -25,14 +30,12 @@ function Home() {
     }
 
     window.addEventListener('scroll', onScroll)
-    onScroll() // initial check
+    onScroll()
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
-    <div>
-      <Navbar />
-
+    <div className="fade-in">
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
@@ -41,7 +44,9 @@ function Home() {
             I'm a UI/UX Designer & Front-End Developer passionate about creating intuitive,
             accessible, and human-centered digital experiences.
           </p>
-          <a href="#projects" className="scroll-link">View My Work ↓</a>
+          <button onClick={scrollToProjects} className="scroll-link">
+            View My Work ↓
+          </button>
         </div>
       </section>
 

@@ -12,8 +12,7 @@ function Navbar() {
 
         <div className="nav-links">
           <Link to="/about">About</Link>
-          <a href="https://linkedin.com/in/amanueltedla" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:amanuelzt@gmail.com">Email</a>
+          <Link to="/contact">Contact</Link>
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>

@@ -1,6 +1,6 @@
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   margin: 0;
@@ -277,9 +277,10 @@ header {
 
 .card-pic {
   width: 180px;
-  height: auto;
+  /* height: auto; */
+  height: 180px; /* set the uniform height */
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
@@ -411,6 +412,96 @@ header {
   font-size: 0.9rem;
   color: #555;
   text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 1.3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Divider line */
+.contact-divider {
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 1.2rem auto 2rem auto;
+  border-radius: 10px;
+  opacity: 0.15;  /* subtle & modern */
+}
+
+.contact-page {
+  min-height: calc(100vh - 80px); /* subtract navbar height if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper for text + links */
+.contact-container {
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+}
+
+.contact-heading {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-subtext {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.6;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #111;
+  transition: opacity 0.2s ease;
+}
+
+.contact-link:hover {
+  opacity: 0.6;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .contact-page {
+    margin-top: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.2rem;
+  }
 }
 
 /* Responsive */

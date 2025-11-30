@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="about-page">
+    <div className="about-page fade-in">
       {/* Banner Section */}
       <section className="about-banner">
         <div className="about-text">
@@ -51,21 +51,21 @@ function About() {
         <div className="books-gallery">
         <div className="book-card">
             <img src="/images/RedRising.png" alt="Red Rising" />
-            <p className="book-info">
-            <strong>Red Rising</strong> <p>A thrilling story that sparked my creativity and love for world-building.</p>
-            </p>
+            <div className="book-info">
+                <strong>Red Rising</strong> <p>A thrilling story that sparked my creativity and love for world-building.</p>
+            </div>
         </div>
         <div className="book-card">
             <img src="/images/EndersGame.png" alt="Ender's Game" />
-            <p className="book-info">
-            <strong>Ender's Game</strong> <p>Showcased the power of strategy, leadership, and problem-solving.</p>
-            </p>
+            <div className="book-info">
+                <strong>Ender's Game</strong> <p>Showcased the power of strategy, leadership, and problem-solving.</p>
+            </div>
         </div>
         <div className="book-card">
             <img src="/images/SwordOfKaigen.png" alt="The Sword of Kaigen" />
-            <p className="book-info">
-            <strong>The Sword of Kaigen</strong> <p>A story that highlights resilience, growth, and human relationships.</p>
-            </p>
+            <div className="book-info">
+                <strong>The Sword of Kaigen</strong> <p>A story that highlights resilience, growth, and human relationships.</p>
+            </div>
         </div>
         </div>
         </section>
