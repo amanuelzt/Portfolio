@@ -16,7 +16,7 @@ function RecyclingApp() {
 
       <figure>
         <img
-          src="/images/RecyclingCoverPic.png"
+          src="/images/Recycling/RecyclingCoverPic.png"
           alt="Recycling App Home"
           className="project-image mobile-image"
         />
@@ -183,7 +183,7 @@ function RecyclingApp() {
         <div className="image-row">
           <figure>
             <img
-              src="/images/RecyclingLogin.png"
+              src="/images/Recycling/RecyclingLogin.png"
               alt="Recycling Login Page"
               className="project-image mobile-image"
             />
@@ -192,7 +192,7 @@ function RecyclingApp() {
 
           <figure>
             <img
-              src="/images/RecyclingSearch.png"
+              src="/images/Recycling/RecyclingSearch.png"
               alt="Search Feature"
               className="project-image mobile-image"
             />
@@ -201,7 +201,7 @@ function RecyclingApp() {
 
           <figure>
             <img
-              src="/images/RecyclingLearn.png"
+              src="/images/Recycling/RecyclingLearn.png"
               alt="Learn Tab"
               className="project-image mobile-image"
             />

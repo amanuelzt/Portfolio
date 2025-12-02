@@ -15,7 +15,7 @@ function SeventyFiveHard() {
       </header>
 
       <figure>
-        <img src="/images/75FrontPage.png" alt="Homepage of 75 Hard App" className="project-image" />
+        <img src="/images/75Hard/75FrontPage.png" alt="Homepage of 75 Hard App" className="project-image" />
         <figcaption className="image-descrip">Homepage of the 75 Hard Challenge web app</figcaption>
       </figure>
 
@@ -75,7 +75,7 @@ function SeventyFiveHard() {
         </ul>
 
         <figure>
-          <img src="/images/75SignUp.png" alt="Sign up page" className="project-image" />
+          <img src="/images/75Hard/75SignUp.png" alt="Sign up page" className="project-image" />
           <figcaption className="image-descrip">Sign up page with customizable challenge start date</figcaption>
         </figure>
         <figure>
@@ -83,11 +83,11 @@ function SeventyFiveHard() {
           <figcaption className="image-descrip">Custom challenge settings</figcaption>
         </figure>
         <figure>
-          <img src="/images/75CalLog.png" alt="Calendar with previous completed days highlighted" className="project-image" />
+          <img src="/images/75Hard/75CalLog.png" alt="Calendar with previous completed days highlighted" className="project-image" />
           <figcaption className="image-descrip">Users can review previous days’ checklists to track progress</figcaption>
         </figure>
         <figure>
-          <img src="/images/75Checklist.png" alt="Daily checklist page" className="project-image" />
+          <img src="/images/75Hard/75Checklist.png" alt="Daily checklist page" className="project-image" />
           <figcaption className="image-descrip">Interactive daily checklist interface</figcaption>
         </figure>
       </section>

@@ -22,7 +22,7 @@ function About() {
         </div>
         <div className="about-image">
           <img
-            src="/images/AboutPicture.png"
+            src="/images/About/AboutPicture.png"
             alt="Amanuel Tedla"
             className="about-photo"
           />
@@ -50,19 +50,19 @@ function About() {
         <h2>Favorite Books</h2>
         <div className="books-gallery">
         <div className="book-card">
-            <img src="/images/RedRising.png" alt="Red Rising" />
+            <img src="/images/About/RedRising.png" alt="Red Rising" />
             <div className="book-info">
                 <strong>Red Rising</strong> <p>A thrilling story that sparked my creativity and love for world-building.</p>
             </div>
         </div>
         <div className="book-card">
-            <img src="/images/EndersGame.png" alt="Ender's Game" />
+            <img src="/images/About/EndersGame.png" alt="Ender's Game" />
             <div className="book-info">
                 <strong>Ender's Game</strong> <p>Showcased the power of strategy, leadership, and problem-solving.</p>
             </div>
         </div>
         <div className="book-card">
-            <img src="/images/SwordOfKaigen.png" alt="The Sword of Kaigen" />
+            <img src="/images/About/SwordOfKaigen.png" alt="The Sword of Kaigen" />
             <div className="book-info">
                 <strong>The Sword of Kaigen</strong> <p>A story that highlights resilience, growth, and human relationships.</p>
             </div>

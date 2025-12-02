@@ -15,7 +15,7 @@ function Marketplace() {
       </header>
 
       <figure>
-        <img src="/images/MarketFrontPage.png" alt="Marketplace homepage" className="project-image" />
+        <img src="/images/Market/MarketFrontPage.png" alt="Marketplace homepage" className="project-image" />
         <figcaption className="image-descrip">Homepage with product cards and quick filters</figcaption>
       </figure>
 
@@ -227,7 +227,7 @@ function Marketplace() {
 
         <figure>
           <img
-            src="/images/MarketVerify.png"
+            src="/images/Market/MarketVerify.png"
             alt="Marketplace verification page"
             className="project-image"
           />
