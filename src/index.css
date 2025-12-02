@@ -1,13 +1,126 @@
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
   background: #f9f9f9;
   color: #222;
   padding-top: 80px;
+}
+
+.project-page h2 {
+  font-size: 2rem;           /* Larger */
+  margin-top: 3rem;          /* More spacing */
+  margin-bottom: 1rem;
+  font-weight: 800;          /* Heavy weight */
+  letter-spacing: 0.5px;
+  color: #111;
+  border-left: 6px solid #4b4b4b;   /* Strong visual marker */
+  padding-left: 12px;
+}
+
+.project-card-button {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: inherit;
+  cursor: pointer;
+  width: 100%;
+}
+
+.project-card-button:focus {
+  outline: 3px solid #6a5acd; /* You can customize this */
+  outline-offset: 4px;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem;
+}
+
+.live-link-section {
+  text-align: center;
+  margin: 3rem 0 5rem 0; /* space around the button */
+}
+
+.live-website-button {
+  display: inline-block;
+  background-color: #0072b1;       /* LinkedIn-blue style accent */
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.live-website-button:hover {
+  background-color: #005a8c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.live-website-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-type-badge {
+  display: inline-block;
+  background-color: #0072b1; /* accent color */
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* --- Subsection Header (H3) --- */
+.project-page h3 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* --- Minor Subheadings (H4) --- */
+.project-page h4 {
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Improve paragraph readability */
+.project-page p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  max-width: 750px;
+}
+
+/* Lists readability */
+.project-page ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+.project-header {
+  max-width: 800px;       /* keeps it from stretching too wide */
+  margin: 0 auto 3rem;    /* centers horizontally */
+  text-align: center;     /* centers the text */
+  padding: 0 1rem;        /* responsive breathing room */
+}
+
+.project-header h1 {
+  margin-bottom: 0.75rem;
 }
 
 .container {
@@ -150,6 +263,24 @@ header {
   margin-top: 2rem;
 }
 
+/* Container for side-by-side images */
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap; /* lets them stack on small screens */
+}
+
+/* Smaller images */
+.half-image {
+  width: 100%;
+  max-width: 360px;   /* controls size — adjust if you want smaller/larger */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
 .project-image {
   display: block;
   max-width: 100%;
@@ -163,7 +294,7 @@ header {
   display: flex;
   gap: 1rem; /* Space between images */
   justify-content: center;
-  flex-wrap: wrap; /* Wrap on smaller screens */
+  flex-wrap: nowrap; /* Wrap on smaller screens */
   margin-top: 1rem;
 }
 
@@ -173,7 +304,6 @@ header {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 .image-descrip {
   text-align: center;
@@ -514,6 +644,10 @@ header {
 
   .about-image img {
     max-height: 300px;
+  }
+
+  .image-row {
+    flex-wrap: wrap;
   }
 }
 

@@ -56,14 +56,14 @@ function Home() {
           <h2>Projects</h2>
           <div className="projects">
             {projects.map((project, index) => (
-              <div
+              <button
                 key={index}
                 id={`project-${index}`}
                 onClick={() => handleCardClick(project.slug)}
-                className={`fade-in-section ${visibleProjects[index] ? 'is-visible' : ''}`}
+                className={`project-card-button fade-in-section ${visibleProjects[index] ? 'is-visible' : ''}`}
               >
                 <ProjectCard {...project} />
-              </div>
+              </button>
             ))}
           </div>
         </div>
