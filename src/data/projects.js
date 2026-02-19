@@ -1,9 +1,9 @@
 export default [
   {
-    slug: "marketplace",
-    title: "UW Marketplace",
-    description: "Concept student marketplace with UW login and secure design.",
-    image: "../images/Market/MarketCoverPic.png",
+    slug: "recycling-app",
+    title: "Recycling App",
+    description: "A mobile app to guide proper recycling practices.",
+    image: "../images/Recycling/RecyclingCoverPic.png",
     type: "UI/UX Design"
   },
   {
@@ -14,10 +14,10 @@ export default [
     type: "Front-End"
   },
   {
-    slug: "recycling-app",
-    title: "Recycling App",
-    description: "A mobile app to guide proper recycling practices.",
-    image: "../images/Recycling/RecyclingCoverPic.png",
+    slug: "marketplace",
+    title: "UW Marketplace",
+    description: "Concept student marketplace with UW login and secure design.",
+    image: "../images/Market/MarketCoverPic.png",
     type: "UI/UX Design"
   },
 ]
