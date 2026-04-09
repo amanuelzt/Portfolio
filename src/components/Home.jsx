@@ -35,41 +35,83 @@ function Home() {
   }, [])
 
   return (
-    <div className="fade-in">
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
+  <div className="fade-in">
+    {/* Hero Section */}
+    <section className="hero">
+      <div className="hero-container">
+        <div className="hero-text">
           <h1>Hi, I'm Amanuel Tedla</h1>
-          <p>
-            I'm a UI/UX Designer & Front-End Developer passionate about creating intuitive,
-            accessible, and human-centered digital experiences.
+          <p className="hero-subtitle">
+            UX Designer focused on clarity, accessibility, and human-centered systems.
           </p>
           <button onClick={scrollToProjects} className="scroll-link">
             View My Work ↓
           </button>
         </div>
-      </section>
 
-      {/* Projects Section */}
-      <section className="projects-section" id="projects">
-        <div className="container">
-          <h2>Projects</h2>
-          <div className="projects">
-            {projects.map((project, index) => (
-              <button
-                key={index}
-                id={`project-${index}`}
-                onClick={() => handleCardClick(project.slug)}
-                className={`project-card-button fade-in-section ${visibleProjects[index] ? 'is-visible' : ''}`}
-              >
-                <ProjectCard {...project} />
-              </button>
-            ))}
-          </div>
+        <div className="hero-image">
+          <img
+            src="/images/About/AboutPicture.png"
+            alt="Portrait of Amanuel Tedla"
+            className="hero-photo"
+          />
         </div>
-      </section>
+      </div>
+    </section>
+    {/* About Preview Section */}
+    <section className="about-preview">
+  <div className="about-preview-container">
+    <div className="about-preview-grid">
+
+      <div className="about-preview-left">
+        <h2>About Me</h2>
+        <div className="about-accent-line" />
+      </div>
+
+      <div className="about-preview-right">
+        <p>
+          Born in Ethiopia, raised in Botswana, and later moving to the United States,
+          my global upbringing deeply shaped how I approach design — with empathy,
+          inclusion, and clarity at the center.
+        </p>
+
+        <p>
+          I focus on building accessible, human-centered digital experiences that
+          reduce cognitive load and work for diverse users.
+        </p>
+
+        <button
+          className="about-link"
+          onClick={() => navigate('/about')}
+        >
+          Read My Full Story →
+        </button>
+      </div>
+
     </div>
-  )
+  </div>
+</section>
+
+    {/* Projects Section */}
+    <section className="projects-section" id="projects">
+      <div className="container">
+        <h2>Projects</h2>
+        <div className="projects">
+          {projects.map((project, index) => (
+            <button
+              key={index}
+              id={`project-${index}`}
+              onClick={() => handleCardClick(project.slug)}
+              className={`project-card-button fade-in-section ${visibleProjects[index] ? 'is-visible' : ''}`}
+            >
+              <ProjectCard {...project} />
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  </div>
+)
 }
 
 export default Home

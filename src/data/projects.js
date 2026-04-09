@@ -20,4 +20,11 @@ export default [
     image: "../images/Market/MarketCoverPic.png",
     type: "UI/UX Design"
   },
+  {
+    slug: "gomacro",
+    title: "GoMacro",
+    description: "A nutrition companion app that fights decision fatigue with energy-aware meal recommendations.",
+    image: "../images/GoMacro/GoMacroLogo.png",
+    type: "UI/UX Design"
+  },
 ]

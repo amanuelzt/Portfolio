@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import SeventyFiveHard from './components/projectPages/SeventyFiveHard'
 import Marketplace from './components/projectPages/Marketplace'
 import RecyclingApp from './components/projectPages/RecyclingApp'
+import GoMacro from './components/projectPages/GoMacro'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects/75-hard" element={<SeventyFiveHard />} />
         <Route path="/projects/marketplace" element={<Marketplace />} />
         <Route path="/projects/recycling-app" element={<RecyclingApp />} />
+        <Route path="/projects/gomacro" element={<GoMacro />} />
       </Routes>
       <Footer />
     </>
